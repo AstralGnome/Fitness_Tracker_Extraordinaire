@@ -16,26 +16,18 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {useNewUrlParser:true});
-
 app.use(require("./routes/htmlRoutes"));
 app.use(require("./routes/apiRoutes"));
 
-//Needs to be updated from here...
-
-// app.post("/submit", ({body}, res) => {
-//   db.Book.create(body)
-//   .then(({_id}) => {
-//     return db
-//     .Library
-//     .findOneAndUpdate({}, { $push: {books:_id}}, {new:true})
-//   })
-//   .then(dbLibrary => {
-//     res.json(dbLibrary);
-//   });
-// });
-
-//... to HERE.
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/workout',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
 app.listen(PORT, ()=> {
   console.log(`App running on port ${PORT}!`);
