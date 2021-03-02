@@ -26,6 +26,9 @@ const WorkoutSchema = new Schema ({
     distance: Number
     }
   ]
+},
+{
+  toJSON: { virtuals: true }
 });
 
 WorkoutSchema.virtual("totalDuration").get(function() {
