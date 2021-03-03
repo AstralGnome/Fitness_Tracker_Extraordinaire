@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Homepage_Image](public\Images\Index.png)
+![Homepage_Image](https://github.com/AstralGnome/Fitness_Tracker_Extraordinaire/blob/8695413fc46bd063cbe2d0340938d57cc98763ad/public/Images/Index.png)
 
 ## Description
 An application that uses express, mongoose, morgan, and chart.js to help you keep track of your workout stats.
