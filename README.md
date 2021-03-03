@@ -22,7 +22,7 @@ Use the link above to navigate to the Heroku Deployed Application. Begin by clic
 ## Usage Information
 This application will keep track of your workouts over the course of the last seven days. Click on the workout dashboard in order to see your meaningful workout stats displayed in colorful charts and graphs!
 ## Contributing 
-Keenan Reed
-Laura Burch
+* Keenan Reed
+* Laura Burch
 ## Questions
 reedkeenan@gmail.com
